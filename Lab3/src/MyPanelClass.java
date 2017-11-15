@@ -24,7 +24,7 @@ public class MyPanelClass extends JPanel {
 		int height = y2 - y1;
 
 		//Paint the background
-		g.setColor(Color.RED);
+		g.setColor(Color.WHITE);
 		g.fillRect(x1, y1, width+1, height+1);
 //        //Draw a border
 //        g.setColor(Color.YELLOW);
@@ -49,6 +49,19 @@ public class MyPanelClass extends JPanel {
 //        p.addPoint(x1 + 15, y1 + 25);
 //        g.setColor(Color.YELLOW);
 //        g.fillPolygon(p);
+		g.setColor(Color.RED);
+		g.fillRect(x1+10, y1+10, 200, 150);
+		g.setColor(Color.WHITE);
+		g.fillRect(x1+10, y1+40, 200, 30);
+		g.fillRect(x1+10, y1+100, 200, 30);
+		g.setColor(Color.BLUE);
+		Polygon triangle = new Polygon();
+		triangle.addPoint(x1+10, y1+10);
+		triangle.addPoint(x1+10, y1+85);
+		triangle.addPoint(x1+10, y1+160);
+		triangle.addPoint(x1+10, y1+10);
+		g.fillPolygon(triangle);
+        g.setColor(Color.WHITE);
         Polygon p2 = new Polygon();
         p2.addPoint(x1 + 25, y1 + 73);
         p2.addPoint(x1 + 41, y1 + 73);
@@ -60,7 +73,6 @@ public class MyPanelClass extends JPanel {
         p2.addPoint(x1 + 47, y1 + 88);
         p2.addPoint(x1 + 34, y1 + 98);
         p2.addPoint(x1 + 38, y1 + 83);
-        g.setColor(Color.WHITE);
-        g.drawPolygon(p2);
+        g.fillPolygon(p2);
 	}
 }
