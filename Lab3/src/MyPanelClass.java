@@ -57,9 +57,8 @@ public class MyPanelClass extends JPanel {
 		g.setColor(Color.BLUE);
 		Polygon triangle = new Polygon();
 		triangle.addPoint(x1+10, y1+10);
-		triangle.addPoint(x1+10, y1+85);
+		triangle.addPoint(x1+100, y1+85);
 		triangle.addPoint(x1+10, y1+160);
-		triangle.addPoint(x1+10, y1+10);
 		g.fillPolygon(triangle);
         g.setColor(Color.WHITE);
         Polygon p2 = new Polygon();
